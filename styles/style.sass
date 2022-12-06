@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+    
 *
     box-sizing: border-box
+    font-family: 'Kumbh Sans', sans-serif
 
 body
     display: flex
@@ -10,7 +13,7 @@ body
     width: 100%
 
     margin: 0
-    padding: 0
+    padding: 25px
 
     background-color: hsl(185, 75%, 39%)    
     background-image: url(/images/bg-pattern-bottom.svg), url(/images/bg-pattern-top.svg)
@@ -18,19 +21,87 @@ body
     background-repeat: no-repeat, no-repeat
 
     #body-card
-       height: 600px
-       width: 100%
-       max-width: 550px
+        display: flex
+        flex-direction: column
+        align-items: center
 
-       border-radius: 20px
-
-       background-color:  white 
-
-       #image-card
-        height: 200px
+        height: 500px
         width: 100%
+        max-width: 450px
 
-        border-radius: 20px 20px 0 0
+        border-radius: 20px
 
-        background-image: url(/images/bg-pattern-card.svg)
-        background-size: cover
+        background-color:  white 
+
+        #image-card
+            display: flex
+            justify-content: center
+
+            height: 200px
+            width: 100%
+
+            border-radius: 20px 20px 0 0
+
+            background-image: url(/images/bg-pattern-card.svg)
+            background-size: cover
+
+            #image
+                position: relative
+
+                top: 125px
+
+                height: 150px
+                width: 150px
+
+                border: 6px solid #FFFFFF
+                border-radius: 50%
+
+                background-image: url('/images/image-victor.jpg')
+                background-size: cover 
+
+        #nickname
+            margin-top: 100px
+
+            color: hsl(229, 23%, 23%)
+
+            font-size: 20px
+            text-align: center
+            font-weight: 700
+
+            #age
+                color: hsl(0, 0%, 59%)
+                margin-left: 10px 
+                font-weight: 400
+
+            #city
+                color: hsl(0, 0%, 59%)
+                line-height: 40px
+                font-weight: 400
+                font-size: 16px
+
+        #stats
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            
+
+            height: 100px
+            width: 450px
+            margin-top: 15px 
+
+            text-align: center
+
+            border-top: 2px solid hsl(0, 0%, 90%)
+
+        .stat
+            color: hsl(229, 23%, 23%)
+            margin-top: 25px
+            font-weight: 700
+            font-size: 22px
+
+            .stat-name
+                color: hsl(0, 0%, 59%)
+                font-weight: 400
+                font-size: 14px
+                letter-spacing: 1px
+
